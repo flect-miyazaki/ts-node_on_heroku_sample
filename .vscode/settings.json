@@ -1,7 +1,7 @@
 {
   "search.exclude": {
     // コード検索で除外する対象
-    "**/node_modules": true,
+    "**/node_modules": true
   },
   // 保存時に適用するフォーマッタ（prettier
   "editor.formatOnSave": true,
@@ -10,4 +10,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  // 絶対パス指定をvscodeに認識させる
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsdk": "node_modules/typescript/lib"
+  // "typeScript.tsdk": "node_modules/TypeScript/lib"
 }

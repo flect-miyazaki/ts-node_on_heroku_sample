@@ -1,5 +1,5 @@
-function example(log: string): void {
-  console.log(log)
-}
+import { Logger } from '@/utils/logger'
+import { LOGGER_PROVIDER } from '@/constants/logger'
+const logger = new Logger('sample', LOGGER_PROVIDER.PINO)
 
-example('あああああああああ')
+logger.info('テスト')
